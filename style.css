@@ -71,16 +71,17 @@ body{
 }
 a{
     padding: 0 1vh;
+    cursor: pointer;
 }
 .close{
     margin-left: auto;
     font-size: 0.7rem;
 }
+#close1,#close2,#close3{
+  cursor: pointer;
+}
 img{
     width: 3.5rem;
-}
-.back-to-shop{
-    margin-top: 4.5rem;
 }
 h5{
     margin-top: 4vh;
@@ -331,7 +332,14 @@ svg #main-circ {
   opacity: 1;
   transition: .1s opacity .3s;
 }
-
+.quantity{
+  margin:0;
+  display:inline-block;
+  padding: 0;
+  width:25px;
+  height: 17px;
+  text-align: center;
+}
 @keyframes animateCircle {
   40% {
     transform: scale(10);

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shopping Cart</title>
+    <link rel="icon" href="img/ca01f0f41a64b0fe46a98afeb719cac9.jpg" type="image/jpg">
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -17,7 +18,7 @@
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
   </head>
-  <body onload="total()">
+  <body onload="total() ;lol();adjust()">
     <div class="card">
       <div class="row">
         <div class="col-md-8 cart">
@@ -31,8 +32,8 @@
               </div>
             </div>
           </div>
-          <div class="row border-top border-bottom">
-            <div class="row main align-items-center">
+          <div class="row border-top border-bottom rem">
+            <div class="row main align-items-center ">
               <div class="col-2">
                 <img
                   class="img-fluid"
@@ -44,8 +45,7 @@
                 <div class="row">EarBuds 2.0</div>
               </div>
               <div class="col">
-                <a href="#">-</a><a href="#" class="border">1</a
-                ><a href="#">+</a>
+                <a class="mines">-</a><input type="text" name="quantity3" class="quantity" value="1" id="q1"><a class="plus">+</a>
               </div>
               <div class="col" id="price1">&euro; 79.00</div>
               <div>
@@ -227,12 +227,12 @@
                     </svg>
                   </label>
                 </div>
-                <span class="close">&#10005;</span>
+                <span class="close"><a id="close1" >&#10005;</a></span>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="row main align-items-center">
+          <div class="row rem">
+            <div class="row main align-items-center ">
               <div class="col-2">
                 <img
                   class="img-fluid"
@@ -244,8 +244,7 @@
                 <div class="row">Samsung Galaxy S22+ Ultra</div>
               </div>
               <div class="col">
-                <a href="#">-</a><a href="#" class="border">1</a
-                ><a href="#">+</a>
+                <a class="mines">-</a><input type="text" name="quantity3" class="quantity" value="1" id="q2"><a class="plus" >+</a>
               </div>
               <div class="col" id="price2">&euro; 1099.99</div>
               <div>
@@ -421,12 +420,12 @@
                       </g>
                     </g>
                   </svg> </label
-                ><span class="close">&#10005;</span>
+                ><span class="close"><a id="close2" >&#10005;</a></span>
             </div>
               </div>
             </div>
           </div>
-          <div class="row border-top border-bottom">
+          <div class="row border-top border-bottom rem">
             <div class="row main align-items-center">
               <div class="col-2">
                 <img class="img-fluid" src="img/qcKBpzHyayGmAPCkRBXSbC.png" />
@@ -436,8 +435,7 @@
                 <div class="row">Apple Smart Watch</div>
               </div>
               <div class="col">
-                <a href="#">-</a><a href="#" class="border">1</a
-                ><a href="#">+</a>
+                <a class="mines">-</a><input type="text" name="quantity3" class="quantity" value="1" id="q3"><a class="plus" >+</a>
               </div>
               <div class="col" id="price3">&euro; 699.99</div>
               <div class="hearbox">
@@ -612,13 +610,9 @@
                       </g>
                     </g>
                   </svg> </label
-                ><span class="close">&#10005;</span>
+                ><span class="close" ><a id="close3" >&#10005;</a></span>
               </div>
             </div>
-          </div>
-          <div class="back-to-shop">
-            <a href="#">&leftarrow;</a
-            ><span class="text-muted">Back to shop</span>
           </div>
         </div>
         <div class="col-md-4 summary">
@@ -645,7 +639,7 @@
             <div class="col">TOTAL PRICE</div>
             <div class="col text-right total"></div>
           </div>
-          <button class="btn">CHECKOUT</button>
+          <button class="btn" onclick="total()">CHECKOUT</button>
         </div>
       </div>
     </div>
